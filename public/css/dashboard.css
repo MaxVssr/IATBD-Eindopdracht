@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-blue-color: #1f2833;
+    --light-blue-color: #66fcf1;
+    --grey-disabled-color: #c5c6c7;
+}
+
+html {
+    box-sizing: inherit;
+    font-size: 62.5%;
+}
+
+body  {
+    font-size: 1.8rem;
+    background-color: #ffffff;
+    font-family: sans-serif;
+}
+
+.navbar {
+    font-size: 24px;
+    background-color: var(--dark-blue-color);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+}
+  
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+  
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: var(--light-blue-color);
+}
+  
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+  
+.logo {
+    display: inline-block;
+    font-size: 36px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+  
+.navbar-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+/* .card-wrapper {
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: repeat(1,minmax(0,1fr));
+    grid-gap: 4rem;
+} */
+
+.gridCard {
+    margin: 8rem 0;
+    grid-column: 3 / span 10;
+    width: 80%;
+    height: 60rem;
+    box-shadow: 0 0.5rem 2rem black;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+}
+
+.gridCard:hover {
+    transform: scale(1.05);
+}
+
+.gridCard > a {
+    text-decoration: none;
+}
+
+.gridCard > a > article {
+    width: 100%;
+    height: 100%;
+}
+
+.gridCard > article {
+    width: 100%;
+    height: 100%;
+}
+
+.gridCard__header {
+    width: 100%;
+    height: 15%;
+}
+
+.gridCard__heading {
+    padding-left: 2rem;
+    color: #000000;
+}
+
+.gridCard__figure {
+    width: 100%;
+    height: 60%;
+}
+
+.gridCard__image {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    padding-top: 2rem;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.gridCard__textSection {
+    width: 100%;
+    height: 7%;
+}
+
+.gridCard__text {
+    padding-left: 2rem;
+    padding-top: 2rem;
+    color: #000000;
+}
+
+.gridCard__text2 {
+    padding-left: 2rem;
+}
+
+.owned-products__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+    text-decoration: none;
+    color: black;
+}
+
+.lended-products__not, .owned-products__not {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    grid-column: 5 / span 4;
+}
+
+.gridCard__btnSection {
+    height: 10%;
+    text-align: center;
+}
+
+.button {
+    padding: 1rem 1.5rem;
+    background-color: var(--dark-blue-color);
+    color: var(--light-blue-color);
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 2.5rem auto;
+}
+
+.button-return {
+    padding: 1rem 1.5rem;
+    background-color: var(--dark-blue-color);
+    color: var(--light-blue-color);
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 2rem auto;
+}
+
+.button:hover, .button-return:hover {
+    background-color: #465b74;
+    color: #98fff8;
+}
+
+@media (min-width: 780px) {
+    .gridCard :nth-child(1) {
+        grid-column: 2 / span 6;
+    }
+
+    .gridCard {
+        grid-column: span 6;
+        margin-left: 10%;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+    
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    
+    .main-nav li {
+        margin: 0;
+    }
+    
+    .nav-links {
+        margin-left: 40px;
+    }
+    
+    .logo {
+        margin-top: 0;
+    }
+    
+    .navbar-toggle {
+        display: none;
+    }
+    
+    .logo:hover,
+    .nav-links:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+@media (min-width: 1130px) {
+    .gridCard:nth-child(1) {
+        grid-column: 1 / span 4;
+    }
+    
+    .gridCard {
+        grid-column: span 4;
+    }
+}
+
+.u-list-style-none {
+    list-style: none;
+}
+
+.u-grid-12 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0,1fr));
+}
+
+.u-grid-gap-2 {
+    gap: 2rem;
+}
