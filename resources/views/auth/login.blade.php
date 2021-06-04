@@ -18,12 +18,12 @@
 
             <section class="login-form__section">
                 <label for="email">Email</label>
-                <input class="login-form__section__input" name="email" id="email" type="email"></input>
+                <input class="login-form__section__input" name="email" id="email" type="email">
             </section>
 
             <section class="login-form__section">
                 <label for="password">Wachtwoord</label>
-                <input class="login-form__section__input" name="password" id="password" type="password"></input>
+                <input class="login-form__section__input" name="password" id="password" type="password">
                 <a class="login-form__section__pw-forgot" href="{{ route('password.request') }}">Wachtwoord vergeten?</a>
             </section>
 

@@ -5,15 +5,6 @@
 @endsection
 
 @section('content')
-<!-- @if ($errors->any())
-        <div class="alert alert--danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li class="alert__message">{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif -->
 <main class="main">
     <section class="create-form">
         <h1 class="create-form__header">Maak hier je product advertentie</h1>

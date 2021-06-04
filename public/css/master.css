@@ -234,9 +234,21 @@ body  {
     margin: 0!important;
 }
 
+.green2 {
+    color: green;
+    margin: 0!important;
+    padding-top: 2rem;
+}
+
 .red {
     color: red;
     margin: 0!important; 
+}
+
+.red2 {
+    color: red;
+    margin: 0!important; 
+    padding-top: 2rem;
 }
 
 .product__return-date {

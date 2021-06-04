@@ -8,14 +8,14 @@
   @if(Auth::user()->account_status != "Inactive")
   <li><a href="/products" class="nav-links">Home</a></li>
   @if(Auth::user()->role == 'Admin')
-    <li><a href="/manage" class="nav-links">Manage</a></li>
+    <li><a href="/manage" class="nav-links">Beheren</a></li>
   @endif
   @if(Auth::user()->role != 'Admin')
     <li><a href="/product/create" class="nav-links">Maak product</a>
     <li><a href="/dashboard" class="nav-links">Mijn producten</a></li>
   @endif
   @endif
-    <li><a href="{{ route('logout') }}" class="nav-links" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">Log out</a></li>
+    <li><a href="{{ route('logout') }}" class="nav-links" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">Log uit</a></li>
   @endauth
   @guest
     <li><a href="/login" class="nav-links">Log in</a>

@@ -6,7 +6,7 @@
 
 @section('content')
     <section class="owned-products__header">
-        <h2>Lend products</h2>
+        <h2>Geleende products</h2>
     </section>
     <ul class="u-grid-12 u-grid-gap-2 card-wrapper">
         @if(count($lend_products) != 0)
@@ -15,14 +15,14 @@
             @endforeach
         @else
         <section class="lended-products__not">
-            <p>You aren't lending at the moment!</p>
+            <p>Je leent nog niks op dit moment!</p>
         </section>
         @endif
     </ul>
 
 
     <section class="owned-products__header">
-        <h2>Owned products</h2>
+        <h2>Eigen producten</h2>
     </section>
     <ul class="u-grid-12 u-grid-gap-2 card-wrapper">
         @if(count($owned_products) != 0)
@@ -31,7 +31,7 @@
             @endforeach
         @else
             <section class="owned-products__not">
-                <p>You have no product available to lend out!</p>
+                <p>Je hebt geen producten om uit te lenen!</p>
             </section>
         @endif
     </ul>

@@ -12,7 +12,7 @@
             @else
                 <p class="product__status red">{{$lend_product->status}}</p>
             @endif
-            <p class="product__return-date">Return before: {{$lend_product->return_date}}</p>
+            <p class="product__return-date">Retourneren vóór: {{$lend_product->return_date}}</p>
         </section>  
         @if($lend_product->status == 'Niet beschikbaar')
             <form method="post" action="/returning">
