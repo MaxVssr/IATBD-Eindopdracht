@@ -1,5 +1,7 @@
 ## About Time2Share
 
+```April 9th 2021```
+
 This Laravel app was created by me for my bachelor in Computer Science.
 
 I am still developing my Laravel skills, feedback is appreciated!
