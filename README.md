@@ -1,6 +1,7 @@
 ## About Time2Share
 
-This Laravel app was created by me for my bachelor in Computer
+This Laravel app was created by me for my bachelor in Computer Science.
+
 I am still developing my Laravel skills, feedback is appreciated!
 
 ## Before you use this app
